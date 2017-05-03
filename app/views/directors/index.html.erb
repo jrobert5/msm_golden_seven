@@ -1,0 +1,46 @@
+
+<a href="/movies" class="btn btn-primary">Movies</a>
+<a href="/directors" class="btn btn-primary">Directors</a>
+<a href="/actors" class="btn btn-primary">Actors</a>
+
+<h1>Directors</h1>
+
+<p><a href="/directors/new_form" class="btn btn-primary">Add a New Director</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Bio</th>
+      <th>DOB</th>
+
+    </tr>
+  </thead>
+
+  <% @Directors.each do |director| %>
+  <tr>
+    <td><img src="<%= director.image_url %>"></td>
+    <td><%= director.name %></td>
+    <td><%= director.bio %></td>
+    <td><%= director.dob %></td>
+    
+    <td>
+      <a href="/directors/<%= director.id %>" class="btn btn-primary">
+        Details
+      </a>
+    </td>
+    <td>
+      <a href="/directors/<%= director.id %>/edit_form" class="btn btn-primary">
+        Edit
+      </a>
+    </td>
+    <td>
+      <a href="/delete_director/<%= director.id %>" class="btn btn-primary">
+        Delete
+      </a>
+    </td>
+  </tr>
+  <% end %>
+
+</table>

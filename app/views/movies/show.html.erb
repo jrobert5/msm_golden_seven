@@ -1,0 +1,33 @@
+  <h1>Movie #<%= @movie.id %></h1>
+
+<table>
+  <tr>
+    <td><b>Title</b></td>
+    <td><%= @movie.title %></td>
+  </tr>
+
+  <tr>
+    <td><b>Year</b></td>
+    <td><%= @movie.year %></td>
+  </tr>
+
+  <tr>
+    <td><b>Duration</b></td>
+    <td><%= @movie.duration %></td>
+  </tr>
+
+  <tr>
+    <td><b>Description</b></td>
+    <td><%= @movie.description %></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td><img src= "<%= @movie.image_url %>">"</td>
+  </tr>
+  <tr>
+  </table>
+
+  <a href="/movies" class="btn btn-primary">
+    Back
+  </a>

@@ -1,0 +1,28 @@
+  <h1>Director #<%= @director.id %></h1>
+
+<table>
+  <tr>
+    <td><b>Name</b></td>
+    <td><%= @director.name %></td>
+  </tr>
+
+  <tr>
+    <td><b>Bio</b></td>
+    <td><%= @director.bio %></td>
+  </tr>
+
+  <tr>
+    <td><b>DOB</b></td>
+    <td><%= @director.dob %></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td><img src= "<%= @director.image_url %>">"</td>
+  </tr>
+  <tr>
+  </table>
+
+  <a href="/directors" class="btn btn-primary">
+    Back
+  </a>

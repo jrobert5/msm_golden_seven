@@ -1,0 +1,28 @@
+  <h1>actor #<%= @actor.id %></h1>
+
+<table>
+  <tr>
+    <td><b>Name</b></td>
+    <td><%= @actor.name %></td>
+  </tr>
+
+  <tr>
+    <td><b>Bio</b></td>
+    <td><%= @actor.bio %></td>
+  </tr>
+
+  <tr>
+    <td><b>DOB</b></td>
+    <td><%= @actor.dob %></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td><img src= "<%= @actor.image_url %>">"</td>
+  </tr>
+  <tr>
+  </table>
+
+  <a href="/actors" class="btn btn-primary">
+    Back
+  </a>
